@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Recipe</title>
+	<style>
+	body{
+		background-image: url('Goodeats.png');
+	}
+	</style>
+</head>
+
+<body>
+	<div style="position:absolute; left:110px; top:50px;">
+		<h1 style="color:white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">New Recipe</h1>
+	</div>
+
+
+	<form action="AddRecipe" method="POST">
+		<div style="position:absolute; left:110px; top:150px;">
+			<label style="color:white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" for="title">Title:</label><br>
+		</div>
+		<div style="position:absolute; left:240px; top:140px;">
+			<input type="text" id="title" name="title" placeholder="Enter title" required><br>
+		</div>
+		<div style="position:absolute; left:110px; top:180px;">
+			<label style="color:white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" for="vegetarian">vegetarian:</label><br>
+		</div>
+		<div style="position:absolute; color:white; left:233px; top:175px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+			<input type="radio" id="vegetarian" name="vegetarian" value="Yes" checked>
+			<label for="vegetarian">Yes</label>
+			<input type="radio" id="vegetarian" name="vegetarian" value="No">
+			<label for="vegetarian">No</label>
+		</div>
+		<div style="position:absolute; left:110px; top:210px;">
+			<label style="color:white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" for="time">Minutes to ready:</label><br>
+		</div>
+		<div style="position:absolute; left:240px; top:200px;">
+			<input type="text" id="time" name="time" placeholder="Enter minutes to ready" required><br><
+		</div>
+		<div style="position:absolute; left:110px; top:240px;">
+			<label style="color:white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" for="ingredients">Ingredients:</label><br>
+		</div>
+		<div style="position:absolute; left:240px; top:230px;">
+			<input type="text" id="ingredients" name="ingredients" placeholder="Enter ingredients" required><br>
+		</div>
+		<div style="position:absolute; left:110px; top:270px;">
+			<label style="color:white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" for="tags">Tags:</label><br>
+		</div>
+		<div style="position:absolute; left:240px; top:260px;">
+			<input type="text" id="tags" name="tags" placeholder="Enter tags" required><br>
+		</div>
+		<div style="position:absolute; left:110px; top:300px;">
+			<label style="color:white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" for="image">Image Address:</label><br>
+		</div>
+		<div style="position:absolute; left:240px; top:290px;">
+			<input type="text" id="image" name="image" placeholder="Enter image address"><br>
+		</div>
+		<div style="position:absolute; left:240px; top:330px; width:60px;">
+			<input type="submit" value="AddRecipe">
+		</div>
+	</form>
+
+    <div style="position:absolute; left:1190px; top:600px; background-color:LightGray; border-radius: 4px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        <a href="/ChefHome">back</a>
+    </div>
+    
+    <div style="position:absolute; left:1230px; top:600px; background-color:LightGray; border-radius: 4px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        <a href="/Logout">Logout</a>
+    </div>
+</body>
+</html>

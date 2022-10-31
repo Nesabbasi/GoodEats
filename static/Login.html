@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+
+		<style>
+			body{
+				background-image: url('Goodeats.png');
+			}
+
+			div.relative {
+			position: absolute;
+			top: 250px;
+			left: 250px;
+			width: 300px;
+			height: 250px;
+			border: 3px white;
+			} 
+		</style>
+	</head>
+	<body>
+		<div style="position:absolute; left:260px; top:195px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+			<h1 style="color:white;">Login</h1>
+		</div>
+	</body>
+
+	<div class="relative">
+		<form action="Login" method="POST">
+			<div style="position:absolute; left:10px; top:10px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+				<label style="color:white" for="username">Username:</label><br>
+			</div>
+			<div style="position:absolute; left:10px; top:30px; width:150px;">
+				<input type="text" id="username" name="lUsername" placeholder="Enter your username" required><br>
+			</div>
+			<div style="position:absolute; left:10px; top:63px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+				<label style="color:white" for="pword">Password:</label><br>
+			</div>
+			<div style="position:absolute; left:10px; top:83px;">
+				<input type="password" id="pword" name="lPword" placeholder="Enter your password" required><br>
+			</div>
+			<div style="position:absolute; left:10px; top:120px; width:60px;">
+				<input type="submit" value="Login">
+			</div>
+			<div style="position:absolute; left:10px; top:130px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+				<p style="color:white;">Don't have an account <a href="/Signup">Signup</a></p>
+			</div>
+		</form>
+	</div>
+</html>

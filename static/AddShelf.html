@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Add shelf</title>
+
+		<style>
+			body{
+				background-image: url('Goodeats.png');
+			}
+
+			div.relative {
+			position: absolute;
+			top: 250px;
+			left: 250px;
+			width: 300px;
+			height: 250px;
+			border: 3px white;
+			} 
+		</style>
+	</head>
+	<body>
+		<div style="position:absolute; left:260px; top:260px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+			<h1 style="color:white;">Add shelf</h1>
+		</div>
+	</body>
+
+	<div class="relative">
+		<form action="AddShelf" method="POST">
+			<div style="position:absolute; left:10px; top:73px;">
+				<input type="text" id="Shelf" name="Shelf" placeholder="Enter Shelf name"><br>
+			</div>
+			<div style="position:absolute; left:10px; top:110px;">
+				<input type="submit" value="AddShelf">
+		</form>
+	</div>
+    <div style="position:absolute; left: 940px;; top:350px; background-color:LightGray; border-radius: 4px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        <a href="/ShelvesTitle">back</a>
+    </div>
+    
+    <div style="position:absolute; left: 970px;; top:350px; background-color:LightGray; border-radius: 4px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        <a href="/Logout">Logout</a>
+    </div>
+</html>

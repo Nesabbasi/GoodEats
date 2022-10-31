@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Signup</title>
+
+		<style>
+			body{
+				background-image: url('Goodeats.png');
+			}
+			
+			div.relative {
+			position: absolute;
+			top: 250px;
+			left: 250px;
+			width: 300px;
+			height: 250px;
+			border: 3px white;
+			} 
+
+		</style>
+	</head>
+
+	<body>
+		<div style="position:absolute; left:260px; top:195px;">
+			<h1 style="color:white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Signup</h1>
+		</div>
+	</body>
+
+	<div class="relative">
+		<form action="Signup" method="POST">
+			<div style="position:absolute; left:10px; top:10px;">
+				<label style="color:white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" for="username">Username:</label><br>
+			</div>
+			<div style="position:absolute; left:10px; top:30px;"">
+				<input type="text" id="username" name="sUsername" placeholder="Enter your username" required><br><br>
+			</div>
+			<div style="position:absolute; left:10px; top:63px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+				<label style="color:white" for="pword">Password:</label>
+			</div>
+			<div style="position:absolute; left:10px; top:83px;">
+				<input type="password" id="pword" name="sPword" placeholder="Enter your password" required><br><br>
+			</div>
+			<div style="position:absolute; left:10px; top:115px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+				<input type="radio" id="user" name="userType" value="user" checked>
+				<label style="color:white" for="user">User</label><br>
+			</div>
+			<div style="position:absolute; left:10px; top:135px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+				<input type="radio" id="chef" name="userType" value="chef">
+				<label style="color:white" for="chef">Chef</label>
+			</div>
+			<div style="position:absolute; left:10px; top:160px;">
+				<input type="submit" value="Signup">
+			</div>
+			<div style="position:absolute; left:10px; top:170px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+				<p style="color:white;">Already have an account <a href="/Login">Login</a></p>
+			</div>
+			
+		</form>
+	</div>
+</html>
